@@ -1,0 +1,26 @@
+Log Book for CM project
+By: Nicolai Amin
+
+0. Folder name      - Date      - Description
+
+1. stick_test       - 24-09-25  - Test for dilution stick and VNA. Shows that there is a shift in the intensity over time
+
+2. lock-in-time     - 24-10-8   - Test for variation in the lockin voltage over time. Shows a clear shift in time, even when nothing is done. Lockin is no longer used
+
+3. 24-10-15         - 24-10-15  - Test with new antennas. Shows:
+                                    1. Test of cavity from 1-30V 1001 point per V. Cavity resonance is at ca. 2.35 GHz
+                                    2. Test from 1-60V 1001 point per V. Anti-crossing is at ca. 46.6V
+                                    3. Test from 30-60V 1001 point per V. Anti-crossing is at ca. 48.2V
+                                    4. Test from 30-60V 10001 point per V. Anti-crossing is at ca. 55V. Coils are too hot to touch
+
+                                    Clearly shows that the resistance in the coils increases with heat. This is a problem, as it means the entire setup needs to 
+                                    be cooled down to get a good measurement. This is a bit worrying...Also gives a good reason to do a temperature measurement 
+                                    of the coils (Temp vs time for different voltages, apply machine learning to predict the temperature of the coils, and how
+                                    this will affect the measurement)
+                                    
+                                    Next time:  Measure the temperature, get good way of transfering from V to mT, test out envelope function, and the circultor
+
+4. Power            - 15.11.26  - Test of the power of the system with time. To find which dB is best for anti-crossing measurements
+                                    Best at -15 dB
+
+5. Temperature      - 24.11.26  - Test of the temperature of the system with time. At 45V, at 22 C, this is right above the anticrossing
